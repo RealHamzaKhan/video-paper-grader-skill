@@ -137,3 +137,15 @@ lesson. Never write student identities or other private data here.
   each page from its clearest focused frame; a spread frame is a
   last resort, flagged.
 - Applies when: booklets or any filming that shows two pages at once.
+
+## Lesson 13 - A scan copy is a second view, never a replacement
+- What happened: Scan-style enhancement (light flattened, contrast
+  raised) made identity handwriting clearly bolder and kept even
+  very faint writing, but automatic perspective straightening found
+  a wrong outline on one messy page and skewed it.
+- What fixed it / what to do: Enhancement is safe as a reading aid
+  and for a parallel scan PDF, with originals always kept. Check
+  the faintest page in both versions before recommending scans.
+  Hard black-and-white conversion can erase faint pencil: reading
+  view only. Straighten is opt-in per page, compared, never batched.
+- Applies when: shadowed, dim or low-contrast filming; faint pencil.

@@ -251,6 +251,14 @@ For each FIRST frame (list them from your notes), in order:
    This is allowed. Guessing is not. (If the teacher later must know,
    it becomes Blocker B1 only when the teacher says identity is
    required for every student.)
+7. Optional reading aid, scan copies: run
+   `python3 tools/scanify.py JOB/views/first_T.jpg JOB/views/first_T_scan.jpg`
+   and crop the identity area from the scan the same way. Scans
+   flatten shadows and raise contrast, so handwriting often reads
+   bolder. Read from BOTH versions. If they agree, confidence is
+   high. If they disagree, trust the ORIGINAL and flag
+   "identity uncertain": enhancement can thicken or merge strokes.
+   A scan is a second view, never a replacement.
 
 ### 4b. Resolve every UNCLEAR frame
 
@@ -349,6 +357,20 @@ Then package:
 CHECKPOINT 6: verification balanced BEFORE packaging, and package
 totals match.
 
+Optional, after packaging: scan PDFs. Run:
+`python3 tools/scanify.py --packaged JOB/out`
+This makes scan/page images and a student_scan.pdf per student
+(light flattened, contrast raised). Originals are never touched.
+Rules:
+- Before recommending the scan PDFs, open the FAINTEST packaged
+  page in both versions side by side. If the scan lost any writing,
+  say so in the report and recommend the original PDFs for this job.
+- The hard black-and-white variant (`--binary`, *_bw.jpg) is a
+  reading view only. Never package from it: it can erase faint
+  pencil completely.
+- Straighten (`--warp`) is opt-in for a single page you choose and
+  compare. Never batch it: a wrong outline can skew a page.
+
 ## Phase 7 - Report and learn
 
 1. Report to the teacher in this exact short format (fill the blanks):
@@ -397,6 +419,7 @@ what you already tried. Never ask a bare question.
 | view.py: no frame at t | t is past the end of the video | use times from index.json, never invent times |
 | package.py REFUSED | grouping mistakes (same time in two students, time with no frame, empty student) | fix exactly what it lists in grouping.json; run again |
 | Everything is UNCLEAR | video quality too low for sheets | try smaller sheets: re-run sheets.py with `--per-sheet 9 --cell-w 640` for bigger cells; if still unclear, B4 |
+| Scan copy looks worse than the original (writing gone, page skewed) | enhancement too strong for this page, or a wrong page outline | use the original for that page; scans never replace originals; do not use `--warp` on it again |
 
 ## Worked mini example (fictional, only to show the shape)
 
