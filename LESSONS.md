@@ -112,3 +112,28 @@ lesson. Never write student identities or other private data here.
   "multiple booklets" in the report.
 - Applies when: students can have more than one booklet, folder or
   bundle in one video.
+
+## Lesson 11 - A page with no identity never starts a student
+- What happened: The last page of a video was faint rough work with
+  different-looking content and no identity on it. The agent started
+  a new "Student 2" for it, inventing a student who does not exist.
+  The video simply ended; nothing showed a new student beginning.
+- What fixed it / what to do: Hard Rule 3b. A new student needs
+  identity evidence or a witnessed new-stack event. A page with
+  neither joins the open student with a flag, or goes unassigned.
+  The end of a video is not evidence.
+- Applies when: always; be most careful with first and last pages.
+
+## Lesson 12 - Pages seen only inside spreads are the first to be lost
+- What happened: A page that only ever appeared as one side of open
+  spreads was left out of the packaging. The agent even noticed the
+  possible gap and flagged it, but the frame arithmetic still
+  balanced, so the run "passed" with a page missing. Another page
+  was packaged from a spread frame although a clean focused frame
+  of it existed.
+- What fixed it / what to do: Keep the "Distinct pages seen" list
+  (Phase 3, step 7) and enforce the Phase 6 PAGE RULE: every seen
+  page is packaged once or excluded with a written reason. Package
+  each page from its clearest focused frame; a spread frame is a
+  last resort, flagged.
+- Applies when: booklets or any filming that shows two pages at once.

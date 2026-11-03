@@ -38,6 +38,16 @@ your eyes. Find the cause, fix it, run again.
 3. **Never guess an identity.** If you cannot read it after all zoom
    steps, label the student by order ("Student 3") and flag it.
    A wrong identity is much worse than a missing one.
+3b. **A new student needs identity evidence.** A student may only be
+   started by (a) a page carrying identity that differs from the
+   open student, or (b) a witnessed event: the previous work is taken
+   away and a new stack or booklet is placed. A page with NO identity
+   and NO such event NEVER starts a student, even if its content,
+   subject or handwriting looks different, and even if it is the last
+   page of the video. The end of a video is not evidence. Such a page
+   joins the currently open student with a flag, or goes to
+   unassigned with a written reason. Inventing a student is the worst
+   error this skill can make.
 4. **Never drop a frame silently.** Every candidate frame ends in
    exactly one place: packaged, an extra view of a packaged page,
    empty, or unassigned with a written reason.
@@ -171,7 +181,10 @@ For EACH sheet, in order:
    - Weak signs: handwriting style clearly changes; paper or page
      design changes; a blank or cover-like page appears between work.
    - NOT a sign by itself: a page that merely looks different, a new
-     question starting, a page turned faster than others.
+     question starting, a page turned faster than others, a different
+     subject or topic than the previous pages, or the video ending.
+     (See Hard Rule 3b: without identity or a witnessed new-stack
+     event, it is never a new student.)
    Why so strict: a false FIRST splits one student into two. A missed
    FIRST merges two students into one. Both are bad. When torn between
    FIRST and NEW, mark UNCLEAR and let Phase 4 decide with full-size
@@ -189,6 +202,18 @@ For EACH sheet, in order:
    sheet block (new students, page count, unclear list). Page count
    rule: FIRST = 1 page, NEW = 1 page, TWO = 2 pages, SAME = 0,
    DUP = 0, EMPTY = 0, UNCLEAR = wait.
+7. Keep a "Distinct pages seen" list in sheet_notes.md, per student:
+   every different page you have seen, in order, INCLUDING a page you
+   only ever saw as one side of a spread. Give each a short name
+   (its first words, its diagram, its printed page number if it has
+   one). This list, not the frame count, is what packaging must
+   match in Phase 6. Pages get lost inside spreads more than
+   anywhere else; this list is the net that catches them.
+8. Printed page numbers: when pages carry them ("Page No 02" and
+   similar), write the number in the Evidence column. Use them in
+   Phase 4 to confirm page ORDER, and treat a jump in numbers as a
+   warning of a possibly missed page: check that stretch with a
+   burst (Phase 4b) before moving on.
 
 CHECKPOINT 3 (per batch): state.md students table matches your notes;
 the "currently open" student is the one from the last FIRST; unclear
@@ -265,6 +290,12 @@ checked.
      the FIRST frame time, then each NEW frame time. For a TWO frame,
      write its time TWICE (it carries two pages). Do not list SAME
      frames (extra views) or EMPTY frames anywhere.
+   - Frame choice: for each page, list the time of its CLEAREST
+     FOCUSED frame (the page alone, sharp, well lit). A spread frame
+     may stand in for a page ONLY when that page never got a focused
+     frame of its own; then flag that page "packaged from spread".
+     Never package a blurry or spread frame when a clean focused
+     frame of the same page exists.
    - `id` and `name`: exactly what you read in Phase 4a, or "".
    - `label`: "Student 1", "Student 2", ... in order.
    - `flags`: anything the teacher should know (identity uncertain,
@@ -291,6 +322,13 @@ write all of them into state.md:
 - RULE: (P - T) + S + E + U must equal F. If it does not, find the
   missing or double-counted frames in your notes and fix them. Do not
   package until this balances.
+- PAGE RULE (just as hard): let D = the number of distinct pages in
+  your "Distinct pages seen" list (all students together). Every one
+  of those pages must be either packaged once, or written in the
+  grouping as excluded with a reason (for example "blank page, no
+  work on it"). A page that was seen but is neither packaged nor
+  excluded means the run is NOT finished, even if the frame rule
+  balances. Frame arithmetic cannot see a lost page. This rule can.
 - Student count check: if the teacher told an expected count and
   yours differs, re-check every FIRST decision once. If it still
   differs, keep your result and add a flag in the report (Phase 7).
